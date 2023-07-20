@@ -19,7 +19,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
 
   const getUserPosts = async () => {
     const response = await fetch(
-      `http://localhost:3000/posts/${userId}/posts`,
+      `https://doodle-back.onrender.com/${userId}/posts`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
